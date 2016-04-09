@@ -1,4 +1,3 @@
-window.onload = function() {
-    $('#home').toggleClass('active');
-    $('#about').toggleClass('active');
+function pi() {
+    document.getElementById("playground").src = "Playground/pi.html";
 }

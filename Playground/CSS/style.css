@@ -1,0 +1,24 @@
+#outputContainer {
+    width:100%;
+    margin:0 auto;
+    overflow:hidden;
+    height: 75px;
+    min-height: 75px;
+    max-height: 75px;
+}
+
+#value {
+    width:150px;
+}
+
+#valueGiven {
+    float:left;
+    width:33%;
+}
+
+#valueReturned {
+    float:left;
+    width:66%;
+    padding-left: 10px;
+    border: .1px solid lightgray;
+}

@@ -6,9 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="Bootstrap/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" href="Bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="Bootstrap/bootstrap.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
         <script src="Javascript/script.js"></script>
     </head>
     <body style="background-color:gray">
@@ -20,6 +22,16 @@
                     <p> 
                         Solutions to the problems hosted <a href=https://github.com/karan/Projects target="_blank">here</a></p> 
                     </p>
+                    <hr>
+                    <div id="innerContainer" ng-app="listAndPlayground">
+                        <div id="list">
+                            <ul>
+                                <li><a href="javascript:pi()"</a>Pi to Nth Decimal Place</li>
+                            </ul>
+                        </div>
+                        <iframe id="playground" src="Playground/default.html"></iframe>
+                    </div>
+                <div id="workspace"></div>
                 </div>
             </div> <!-- /container -->
         </div> <!-- ng-app -->
