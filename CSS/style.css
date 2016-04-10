@@ -4,15 +4,14 @@
     overflow:hidden;
 }
 
-#list {
-    float:left;
-    width:33%;
-}
-
 #playground {
     float:left;
-    width:66%;
+    width:100%;
     padding-left: 10px;
     border: .1px solid lightgray;
     min-height: 400px;
+} 
+.center {
+    display:flex;
+    justify-content:center;
 }

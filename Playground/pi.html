@@ -1,16 +1,18 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <script src="../Javascript/SolutionsPiToTheNth.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Bootstrap/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="../Bootstrap/bootstrap.min.css">
+    <script src="../Javascript/Solutions/PiToTheNth/PiToTheNth.js"></script>
 </head>
 <body>
-    <div>
+    <div ng-app="">
         <blockquote>
             Find PI to the Nth Digit - Enter a number and have the program generate PI up to that many decimal places. Keep a limit to how far the program will go (100 places).
         </blockquote>
         <form>
             <input type ="number" id="value" placeholder="Choose Decimal Place">
-            <submit>Submit!</submit><br>
+            <button>Submit!</button><br>
             <button>Run Tests</button>
         </form>
         <div id="outputContainer">
@@ -18,8 +20,11 @@
             <div id="valueReturned"></div>
         </div>
         <hr>
-        <button onclick="showC()">View C++ Solution</button><button onclick="showJava()">View Java Solution</button><button onclick="showNET()">View C# Solution</button>
-        <code id="code"></code>
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Profile</a></li>
+            <li role="presentation"><a href="#">Messages</a></li>
+        </ul>
     </div>
 </body>
 </html>

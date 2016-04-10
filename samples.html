@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="Bootstrap/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" href="Bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link rel="stylesheet" type="text/css" media="(min-width: 800px)" href="CSS/style.css">
+        <link rel="stylesheet" type="text/css" media="(max-width: 799px)" href="CSS/mobilestyle.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script src="Bootstrap/bootstrap.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
@@ -17,18 +18,23 @@
         <div ng-app="">
             <div class="container">
                 <div ng-include="'./Resources/Navbar.html'"></div>
-                <!-- Main component for a primary marketing message or call to action -->
-                <div class="jumbotron">
-                    <p> 
-                        Solutions to the problems hosted <a href=https://github.com/karan/Projects target="_blank">here</a></p> 
-                    </p>
-                    <hr>
-                    <div id="innerContainer" ng-app="listAndPlayground">
-                        <div id="list">
-                            <ul>
-                                <li><a href="javascript:pi()"</a>Pi to Nth Decimal Place</li>
+                <div class="well well-md">
+                    <div class="center">
+                    Solutions to the problems hosted&nbsp;<u><a href=https://github.com/karan/Projects target="_blank">here</a></u>
+                    </div>
+                    <div class="center">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Problems
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:pi()">Pi to the Nth Place</a></li>
+                                <li><a href="javascript:e()">E to the Nth Place</a></li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+                <div class="jumbotron">
+                    <div id="innerContainer" ng-app="listAndPlayground">
                         <iframe id="playground" src="Playground/default.html"></iframe>
                     </div>
                 <div id="workspace"></div>
